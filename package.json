@@ -1,0 +1,54 @@
+{
+  "name": "restofund",
+  "version": "0.1.0",
+  "description": "Crowdfunding application for restaurants.",
+  "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rammina/resto-fund.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rammina/resto-fund/issues"
+  },
+  "homepage": "https://github.com/Rammina/resto-fund#readme",
+  "dependencies": {
+    "@stripe/stripe-js": "^1.15.0",
+    "async": "^3.2.0",
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cloudinary": "^1.22.0",
+    "concurrently": "^6.1.0",
+    "cookie-sessions": "^0.0.2",
+    "cors": "^2.8.5",
+    "date-fns": "^2.21.3",
+    "dotenv": "^9.0.1",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.7",
+    "morgan": "^1.10.0",
+    "nocache": "^2.1.0",
+    "nodemon": "^2.0.7",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "stripe": "^8.222.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.0"
+  }
+}
